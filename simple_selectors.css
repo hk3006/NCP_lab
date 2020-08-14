@@ -1,0 +1,98 @@
+
+body {
+    font-family: 'Zilla Slab', serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #537ac2;
+    color:beige;
+  }
+.header  {
+    text-align: justify;
+    position:relative;
+    
+  }
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;        
+    border:30px solid transparent;
+    border-image:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round;    
+  }
+   
+.header h1 {
+    float: left;
+    margin-left:20px;
+    margin-top: 35px;
+  }
+.navbar {
+overflow: hidden;
+position: absolute;
+top: 30px;
+right: 170px;
+margin-right:0%;
+padding-right: 0px;
+}
+
+.navbar a {
+float: left;
+color: #ffffff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+.content{
+position: absolute;
+text-align: left;
+margin-top:150px;
+margin-left:1.5%;
+text-indent: 1px;
+text-justify: inter-word;
+width:50%;
+}
+.tab{
+margin-left:10%;
+margin-right:10%;
+}
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even) {
+background-color:rgb(32, 53, 40);
+}
+.user{
+    position: absolute;
+text-align: left; 
+margin-left:55%; 
+margin-top:100px;
+width:50%;
+}
+form{
+    margin-right:10%;
+    width:60%
+}
+ul{
+    list-style-type: square;
+    background-color: purple;
+}
+p{
+    font-style: italic;
+}
+table{
+    border-style:double;
+    border-color: black;
+}

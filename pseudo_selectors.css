@@ -1,0 +1,13 @@
+a:active{ 
+    color: yellow; 
+    }
+h1:hover{  
+    color:red;  
+    }  
+h2:hover{  
+    color:rgb(168, 97, 38);  
+    } 
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+    }
