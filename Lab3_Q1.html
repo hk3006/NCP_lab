@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Zilla Slab', serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-color: #537ac2;
+            color:beige;
+          }
+        .header  {
+            text-align: justify;
+            position:relative;
+            
+          }
+        .header img {
+            float: left;
+            width: 100px;
+            height: 100px;        
+            border:30px solid transparent;
+            border-image:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round;    
+          }
+           
+        .header h1 {
+            float: left;
+            margin-left:20px;
+            margin-top: 35px;
+          }
+        .navbar {
+        overflow: hidden;
+        position: absolute;
+        top: 30px;
+        right: 170px;
+        margin-right:0%;
+        padding-right: 0px;
+        }
+
+        .navbar a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        .content{
+        position: absolute;
+        text-align: left;
+        margin-top:150px;
+        margin-left:1.5%;
+        text-indent: 1px;
+        text-justify: inter-word;
+        width:50%;
+        }
+        .tab{
+        margin-left:10%;
+        margin-right:10%;
+        }
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+        tr:nth-child(even) {
+        background-color:rgb(32, 53, 40);
+        }
+        .user{
+            position: absolute;
+        text-align: left; 
+        margin-left:55%; 
+        margin-top:100px;
+        width:50%;
+        }
+        form{
+            margin-right:10%;
+            width:60%
+        }
+        #link { 
+            color:rgb(201, 218, 218);
+            margin:25%;
+            text-align: center;
+         }
+        ul{
+            list-style-type: square;
+            background-color: purple;
+        }
+        p{
+            font-style: italic;
+        }
+        #pbold {
+            font-weight: bold;
+        }
+        a:active{ 
+        color: yellow; 
+        }
+        h1:hover{  
+        color:red;  
+        }  
+         h2:hover{  
+        color:rgb(168, 97, 38);  
+        } 
+        p.clear {
+        clear: both;
+        } 
+		p::first-letter {
+        color: #ff0000;
+        font-size: xx-large;
+        }
+        #tdmin{
+            background-color:green;
+        }
+        #tdmax{
+            background-color: red;
+        }
+        table{
+            border-style:double;
+            border-color: black;
+        }
+    </style>
+    <head>
+    <title>
+        COVID-19 Stats
+    </title>
+
+    </head>
+    <body>
+        <marquee behavior="scroll" direction="left">Stay Home ! Stay Safe ! Recovered patients please donate blood plasma.</marquee>
+        <div class="header">
+            <img src="https://t4.ftcdn.net/jpg/03/20/46/55/240_F_320465539_SSzNrjNnHnMCZ2SX5KLt0HpODDHViyn1.jpg",alt="">
+            <h1>Covid 19 Stats</h1>
+        </div>
+        
+        <div class="navbar">
+            <a href="https://www.covid19india.org/">Home</a>
+            <a href="https://www.covid19india.org/">Item1</a>
+            <a href="https://www.covid19india.org/">Item2</a>
+            <a href="https://www.covid19india.org/">Contact us</a>
+        </div>
+        
+        <div class="content">
+            <h2>
+                About Site:
+            </h2>
+            <p class="clear">
+                Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+                Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+            </p>
+            <p id='pbold'>
+                COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.
+                <p>
+                Most common symptoms:
+                </p>
+                <ul>                
+                <li>fever</li>
+                <li>dry cough</li>
+                <li>tiredness</li>
+                <li>Less common symptoms:</li>
+                <li>aches and pains</li>
+                <li>sore throat</li>
+                <li>diarrhoea</li>
+                <li>conjunctivitis</li>
+                <li>headache</li>
+                </ul>
+
+            </p>
+            <div class="tab">
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Active cases</th>
+                    <th>Deaths</th>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>616,617</td>
+                    <td>42,578</td>
+                </tr>
+                <tr>
+                    <td>United States</td>
+                    <td id="tdmax">2,314,463</td>
+                    <td id="tdmax">164,094</td>
+                </tr>
+                <tr>
+                    <td>Chile</td>
+                    <td id="tdmin">16,699</td>
+                    <td>9,958</td>
+                </tr>
+                <tr>
+                    <td>Colombia</td>
+                    <td>156,451</td>
+                    <td>12,250</td>
+                </tr>
+                <tr>
+                    <td>Saudi Arabia</td>
+                    <td>33,752</td>
+                    <td id="tdmin">3,093</td>
+                </tr>
+            </table>
+        </div>
+        
+        </div>
+        
+        <div class="user">
+            <form>
+                <fieldset>
+                 <legend>Sign In</legend>
+                 <label for="uname">User Name:</label>
+                 <input type="text" id="uname" name="uname"><br><br>
+                 <label for="pwd">Password: </label>
+                 <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+                 <button type="submit" value="Submit" style="margin:15px;">Submit</button>
+                 <button type="reset" value="Reset" style="margin:15px;">Reset</button>
+                 <br>
+                 <a id="link" href="https://www.website.com/forgot-password/">Forgot Password ?</a>
+                </fieldset>
+               </form>
+               <br>
+               <br>
+               <form>
+                <fieldset>
+                 <legend>Sign Up</legend>
+                 <label for="fname">First Name:</label>
+                 <input type="text" id="fname" name="fname"><br><br>
+                 <label for="lname">Last Name:</label>
+                 <input type="text" id="lname" name="lname"><br><br>
+                 <label for="pwd">Password: </label>
+                 <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+                 <label for="email">E-mail:</label>
+                 <input type="email" id="email" name="email"><br><br>
+                 <label for="mobile">Mobile Number:</label>
+                 <input type="text" id="mobile" name="mobile"  pattern="[0-9]{10}" required><br><br>
+                 <label for="date">Date of birth</label>
+                 <input type="date" id="date" name="date" min="2000-01-02"><br><br>
+
+                 <label for="address">Address</label>
+                <input type="text" id="address" name="address" maxlength="50" required><br><br>
+            
+                <p>Choose your blood group</p>
+                <input type="radio" name="zone" value="group1">
+                <label></label>Green Zone</label><br>
+                <input type="radio" name="zone" value="group2">
+                <label>Orange Zone</label><br>
+                <input type="radio" name="zone" value="group3">
+                <label>Red Zone</label><br>
+                
+                <p>Upload Reports :</p>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile" multiple><br><br>
+                <p>Fill in Symptopms : </p>
+                <input type="checkbox" id="sym1" name="sym1" value="sym1">
+                <label for="sym1">Cough</label><br>
+                <input type="checkbox" id="sym2" name="sym2" value="sym2">
+                <label for="sym2">Fever</label><br>
+                <input type="checkbox" id="sym3" name="sym3" value="sym3">
+                <label for="sym3">Sore Throat</label><br>
+                 <button type="submit" value="Submit" style="margin:15px;">Submit</button>
+                 <button type="reset" value="Reset" style="margin:15px;">Reset</button>
+                 <br><br>
+                 <input type="checkbox" id="consent" name="consent" value="consent">
+                 <label for="consent">I Agree to the Terms and Conditions</label><br>
+                </fieldset>
+               </form>
+        </div>
+            
+        
+
+    </body>
+</html>
